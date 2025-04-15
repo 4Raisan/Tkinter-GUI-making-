@@ -21,4 +21,4 @@ label6.grid(row=10, column=7, columnspan=5) # emptys not counted
 
 # when we custom the button with padx, pady and columnspan and rowspan, forcus must be on the pad's' with span's', because that effect to the whole grid system.
 
-root.mainloop
+root.mainloop()
