@@ -18,4 +18,7 @@ def press(i):
     label_2 = Label(root, text=5+i, border=3)
     label_2.pack()
 
+button_2 = Button(root, text="What's 5+7 ?", command=lambda: press(7), border=6, bg='cyan')
+button_2.pack()
+
 root.mainloop() # ending
