@@ -24,4 +24,8 @@ def press(i):
 button_2 = Button(root, text="What's 5+7 ?", command=lambda: press(7), border=6, bg='cyan')
 button_2.pack()
 
+# add Exit button for Exit from the whole program
+exitbutton = Button(root, text=">> Exit Here <<", command=root.quit, fg='red', font=('Arial', 20, 'bold'))
+exitbutton.pack(pady=5)
+
 root.mainloop() # ending
