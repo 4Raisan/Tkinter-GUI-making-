@@ -9,5 +9,6 @@ e = Entry(root, borderwidth=10, width=50, bg='green', fg='black')
 # But u have to clear and give the input, else it's on the output
 
 e.insert(0, 'Enter your name: ')
+#e.delete(0, END) # clear the whole input box
 
 root.mainloop() # ending
