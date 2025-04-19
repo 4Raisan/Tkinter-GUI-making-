@@ -15,4 +15,7 @@ e.pack()
 
 e.get() # input for using 
 
+button1 = Button(root, text='Submit')  #, command=click
+button1.pack()
+
 root.mainloop() # ending
