@@ -11,4 +11,6 @@ e = Entry(root, borderwidth=10, width=50, bg='green', fg='black')
 e.insert(0, 'Enter your name: ')
 #e.delete(0, END) # clear the whole input box
 
+e.pack()
+
 root.mainloop() # ending
