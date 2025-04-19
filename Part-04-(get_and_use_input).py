@@ -8,4 +8,6 @@ e = Entry(root, borderwidth=10, width=50, bg='green', fg='black')
 # Add text into input box - Prefilled Input Box
 # But u have to clear and give the input, else it's on the output
 
+e.insert(0, 'Enter your name: ')
+
 root.mainloop() # ending
