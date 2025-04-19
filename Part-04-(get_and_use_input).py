@@ -13,4 +13,6 @@ e.insert(0, 'Enter your name: ')
 
 e.pack()
 
+e.get() # input for using 
+
 root.mainloop() # ending
