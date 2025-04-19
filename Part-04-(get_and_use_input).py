@@ -20,7 +20,7 @@ def click():
     label1.pack()
     e.delete(0, END) # clear the box forever after the button clicked
 
-button1 = Button(root, text='Submit')  #, command=click
+button1 = Button(root, text='Submit', command=click)
 button1.pack()
 
 root.mainloop() # ending
