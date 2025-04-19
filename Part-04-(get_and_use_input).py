@@ -18,6 +18,7 @@ e.get() # input for using
 def click():
     label1 = Label(root, text='Hi '+e.get()+'...!') # e.get()
     label1.pack()
+    e.delete(0, END) 
 
 button1 = Button(root, text='Submit')  #, command=click
 button1.pack()
