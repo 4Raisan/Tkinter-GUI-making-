@@ -22,6 +22,7 @@ def click():
     label2 = Label(root, text='Hi '+e.get()+'...!')
     label2.pack()
     # back to normal, above delete deleted forever
+    e.insert(0, 'Enter your name: ')
 
 button1 = Button(root, text='Submit', command=click)
 button1.pack()
