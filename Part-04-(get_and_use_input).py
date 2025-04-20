@@ -16,11 +16,13 @@ e.pack()
 e.get() # input for using 
 
 def click():
-    label1 = Label(root, text='Hi '+e.get()+'...!') # e.get()
-    label1.pack()
+    label0 = Label(root, text='Hi '+e.get()+'...!') # e.get()
+    label0.pack()
+
     e.delete(0, END) # clear the box forever after the button clicked
     label2 = Label(root, text='Hi '+e.get()+'...!')
     label2.pack()
+
     # back to normal, above delete deleted forever
     e.insert(0, 'Enter your name: ')
 
