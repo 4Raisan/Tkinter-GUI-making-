@@ -19,6 +19,9 @@ def click():
     label0 = Label(root, text='Hi '+e.get()+'...!') # e.get()
     label0.pack()
 
+    label1 = Label(root, text='Hi '+e.get()[17:(len(e.get()))]+'...!')
+    label1.pack()
+
     e.delete(0, END) # clear the box forever after the button clicked
     label2 = Label(root, text='Hi '+e.get()+'...!')
     label2.pack()
