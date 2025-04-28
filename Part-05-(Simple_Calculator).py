@@ -1,6 +1,6 @@
 from tkinter import *
-root = tk.root()
+root = Tk()
 
-root.title()
+root.title('Cal : )')
 
 root.mainloop()
