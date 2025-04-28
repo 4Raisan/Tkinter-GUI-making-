@@ -5,7 +5,7 @@ root = Tk()
 root.title('Cal : )')
 
 # input
-e = Entry()
+e = Entry(root, width=20)
 e.grid(row=0, column=0)
 
 # process as defs (+,-,/,*)
