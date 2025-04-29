@@ -19,7 +19,9 @@ for (txt, r, c) in btnnums:
   btn.grid(row=r, column=c)
 # arithmetic operators and .
 btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3], ['.',5,0]]
-
+for (txt, r, c) in btnarm:
+  btn = Button(root, text=txt)
+  btn.grid(row=r, column=c)
   
 # specials
 
