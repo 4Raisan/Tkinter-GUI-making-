@@ -6,7 +6,7 @@ root.title('Cal : )')
 
 # input
 e = Entry(root, width=20)
-e.grid(row=0, column=0)
+e.grid(row=0, column=0, columnspan=4)
 
 # process as defs (+,-,/,*)
 
