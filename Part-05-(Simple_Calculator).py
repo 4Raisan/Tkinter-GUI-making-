@@ -30,7 +30,7 @@ for (txt, r, c) in btnarm:
   btn.grid(row=r, column=c)
   
 # results and clears
-buttonclr = Button(root, text='AC')
+buttonclr = Button(root, text='AC', command=allclear)
 buttonclr.grid(row=3, column=2)
 
 buttondel = Button(root, text='⌫')
