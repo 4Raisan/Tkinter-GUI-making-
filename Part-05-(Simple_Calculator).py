@@ -22,6 +22,9 @@ btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3], ['.',5,0]]
 for (txt, r, c) in btnarm:
   btn = Button(root, text=txt)
   btn.grid(row=r, column=c)
+# results and clears
+buttonclr = Button(root, text='AC')
+buttonclr.grid(row=3, column=2)
   
 # specials
 
