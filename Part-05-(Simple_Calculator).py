@@ -25,7 +25,9 @@ for (txt, r, c) in btnarm:
 # results and clears
 buttonclr = Button(root, text='AC')
 buttonclr.grid(row=3, column=2)
-  
+buttondel = Button(root, text='⌫')
+buttondel.grid(row=3, column=3)
+
 # specials
 
 
