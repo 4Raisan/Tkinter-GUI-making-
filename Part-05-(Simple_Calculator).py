@@ -25,7 +25,7 @@ def allclear():  # all clear the input box
 
 # buttons with positions, use grid()
 # numbers
-btnnums = [['1',1,0], ['2',1,1], ['3',1,2], ['4',1,3], ['5',2,0], ['6',2,1], ['7',2,2], ['8',2,3], ['9',3,0], ['0',3,1]]
+btnnums = [['1',1,0], ['2',1,1], ['3',1,2], ['4',1,3], ['5',2,0], ['6',2,1], ['7',2,2], ['8',2,3], ['9',3,0], ['0',3,1], ['.',5,0]]
 for (txt, r, c) in btnnums:
   btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)))
   # lambda: (typing(txt)) - for none iteration places
@@ -33,7 +33,7 @@ for (txt, r, c) in btnnums:
   btn.grid(row=r, column=c)
 
 # arithmetic operators and .
-btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3], ['.',5,0]]
+btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3]]
 for (txt, r, c) in btnarm:
   btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)))
   btn.grid(row=r, column=c)
