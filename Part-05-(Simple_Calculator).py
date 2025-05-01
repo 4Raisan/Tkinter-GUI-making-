@@ -27,7 +27,9 @@ def allclear():  # all clear the input box
 # numbers
 btnnums = [['1',1,0], ['2',1,1], ['3',1,2], ['4',1,3], ['5',2,0], ['6',2,1], ['7',2,2], ['8',2,3], ['9',3,0], ['0',3,1]]
 for (txt, r, c) in btnnums:
-  btn = Button(root, text=txt, command=lambda: (typing(txt)))
+  btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)))
+  # lambda: (typing(txt)) - for none iteration places
+  # lambda txt=txt: (typing(txt)) - for iterating places, because lambda uses last assigned value, so we need to assign them
   btn.grid(row=r, column=c)
 
 # arithmetic operators and .
