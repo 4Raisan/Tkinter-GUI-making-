@@ -22,7 +22,11 @@ def typing(key):  # typed nuimbers display on the input box
 def allclear():  # all clear the input box
   e.delete(0, END)
 
-
+def backspace():
+  global box
+  box = box[:-2]
+  typing(box)
+  
 # buttons with positions, use grid()
 # numbers
 btnnums = [['1',1,0], ['2',1,1], ['3',1,2], ['4',1,3], ['5',2,0], ['6',2,1], ['7',2,2], ['8',2,3], ['9',3,0], ['0',3,1], ['.',5,0]]
@@ -42,7 +46,7 @@ for (txt, r, c) in btnarm:
 buttonclr = Button(root, text='AC', command=allclear)
 buttonclr.grid(row=3, column=2)
 
-buttondel = Button(root, text='⌫')
+buttondel = Button(root, text='⌫', command =  backspace)
 buttondel.grid(row=3, column=3)
 
 buttoneql = Button(root, text='=')
