@@ -25,7 +25,7 @@ def allclear():  # all clear the input box
 def backspace():
   global box
   box = box[:-2]
-  typing(box)
+  typing('')
   
 # buttons with positions, use grid()
 # numbers
