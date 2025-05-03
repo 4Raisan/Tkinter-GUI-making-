@@ -20,6 +20,7 @@ def typing(key):  # typed nuimbers display on the input box
 
 def equal():
   eql = eval(box)
+  box = str(eql) # for continue the math with already made answer
   e.delete(0, END)
   e.insert(0, eql)
   
