@@ -54,7 +54,7 @@ buttonclr.grid(row=3, column=2)
 buttondel = Button(root, text='⌫', command=backspace)
 buttondel.grid(row=3, column=3)
 
-buttoneql = Button(root, text='=')
+buttoneql = Button(root, text='=', command=eql)
 buttoneql.grid(row=5, column=1, columnspan=3)
 
 
