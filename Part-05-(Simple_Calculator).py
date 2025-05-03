@@ -16,7 +16,12 @@ def typing(key):  # typed nuimbers display on the input box
   global box
   box = box + key
   e.delete(0, END)
-  e.insert(0 , box)
+  e.insert(0, box)
+
+def equal():
+  eql = eval(box)
+  e.delete(0, END)
+  e.insert(0, eql)
   
 
 def allclear():  # all clear the input box
@@ -46,7 +51,7 @@ for (txt, r, c) in btnarm:
 buttonclr = Button(root, text='AC', command=allclear)
 buttonclr.grid(row=3, column=2)
 
-buttondel = Button(root, text='⌫', command =  backspace)
+buttondel = Button(root, text='⌫', command=backspace)
 buttondel.grid(row=3, column=3)
 
 buttoneql = Button(root, text='=')
