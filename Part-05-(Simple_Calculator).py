@@ -51,13 +51,13 @@ for (txt, r, c) in btnarm:
   btn.grid(row=r, column=c)
   
 # results and clears
-buttonclr = Button(root, text='AC', command=allclear)
+buttonclr = Button(root, text='AC', command=allclear, padx=16, pady=11, bg='#C45924', font=('Helvetica', 9, 'bold'))
 buttonclr.grid(row=3, column=2)
 
-buttondel = Button(root, text='⌫', command=backspace)
+buttondel = Button(root, text='⌫', command=backspace, padx=16, pady=11, bg='#C45924', font=('Helvetica', 9, 'bold'))
 buttondel.grid(row=3, column=3)
 
-buttoneql = Button(root, text='=', command=equal)
+buttoneql = Button(root, text='=', command=equal, padx=73, pady=5, bg='#1DA80E', font=('Helvetica', 14, 'bold'))
 buttoneql.grid(row=5, column=1, columnspan=3)
 
 
