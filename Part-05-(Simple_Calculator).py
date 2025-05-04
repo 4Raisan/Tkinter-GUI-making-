@@ -27,6 +27,7 @@ def equal():
 
 def allclear():  # all clear the input box
   e.delete(0, END)
+  box = ''
 
 def backspace():
   global box
@@ -55,7 +56,7 @@ buttonclr.grid(row=3, column=2)
 buttondel = Button(root, text='⌫', command=backspace)
 buttondel.grid(row=3, column=3)
 
-buttoneql = Button(root, text='=', command=eql)
+buttoneql = Button(root, text='=', command=equal)
 buttoneql.grid(row=5, column=1, columnspan=3)
 
 
