@@ -26,6 +26,7 @@ def equal():
   
 
 def allclear():  # all clear the input box
+  global box
   e.delete(0, END)
   box = ''
 
