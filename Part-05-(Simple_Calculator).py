@@ -12,6 +12,7 @@ e.grid(row=0, column=0, columnspan=4, padx=2, pady=5)
 
 # process as defs
 box = ''
+error = False
 def typing(key):  # typed nuimbers display on the input box
   global box
   box = box + key
@@ -19,12 +20,17 @@ def typing(key):  # typed nuimbers display on the input box
   e.insert(0, box)
 
 def equal():
-  eql = eval(box)
-  box = str(eql) # for continue the math with already made answer
+  global eql, box
+  try:
+    eql = eval(box)
+    box = str(eql) # for continue the math with already made answer
+  except (ZeroDivisionError, SyntaxError):  # handle zero division error and syntax errors
+    eql = 'Error'
+    box = ''
   e.delete(0, END)
   e.insert(0, eql)
   
-
+      
 def allclear():  # all clear the input box
   global box
   e.delete(0, END)
