@@ -47,7 +47,7 @@ for (txt, r, c) in btnnums:
 # arithmetic operators and .
 btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3]]
 for (txt, r, c) in btnarm:
-  btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)))
+  btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=17,pady=3, bg='#0060BF', font=('Helvetica', 15, 'bold'))
   btn.grid(row=r, column=c)
   
 # results and clears
