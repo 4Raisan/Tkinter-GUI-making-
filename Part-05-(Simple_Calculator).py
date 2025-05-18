@@ -3,6 +3,8 @@ root = Tk()
 
 # root.title(), like the window name in the close button row
 root.title('Cal : )')
+# add the window icon
+root.iconbitmap('Part-06-(iconbitmap).ico')
 
 # input
 e = Entry(root, width=20,  borderwidth=5, font=('Courier', 12, 'bold'))
