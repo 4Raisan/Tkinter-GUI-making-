@@ -34,7 +34,7 @@ def equal():
     if len(str(box))>20:
       expo = math.floor(math.log10(abs(eql)))  # Find exponent  **(+-X)
       scint = eql / (10**expo)  # Normalize number to scientific notation
-      e.insert(0, f'{expo:.12f}×10^{scint}')
+      eql = f'{expo}×10^{scint}'
   except (ZeroDivisionError, SyntaxError):  # handle zero division error and syntax errors
     eql = 'Error'
     box = ''
