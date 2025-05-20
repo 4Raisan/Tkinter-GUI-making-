@@ -1,4 +1,5 @@
 from tkinter import *
+import math
 root = Tk()
 
 # root.title(), like the window name in the close button row
@@ -18,8 +19,12 @@ error = False
 def typing(key):  # typed nuimbers display on the input box
   global box
   box = box + key
+  disp = box
+  if (len(box)>20):
+    extra = len(box)-20
+    disp = (str(box)[extra:])
   e.delete(0, END)
-  e.insert(0, box)
+  e.insert(0, disp)
 
 def equal():
   global eql, box
