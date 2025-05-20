@@ -56,7 +56,10 @@ def backspace():
 # numbers
 btnnums = [['1',1,0], ['2',1,1], ['3',1,2], ['4',1,3], ['5',2,0], ['6',2,1], ['7',2,2], ['8',2,3], ['9',3,0], ['0',3,1], ['.',5,0]]
 for (txt, r, c) in btnnums:
-  btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=20, pady=10, bg='#FFDE21', font=('Helvetica', 10, 'bold'))
+  if txt=='.':
+    btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=16, pady=1, bg='#FFDE21', font=('Helvetica', 17, 'bold'))
+  else:
+    btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=20, pady=10, bg='#FFDE21', font=('Helvetica', 10, 'bold'))
   # lambda: (typing(txt)) - for none iteration places
   # lambda txt=txt: (typing(txt)) - for iterating places, because lambda uses last assigned value, so we need to assign them
   btn.grid(row=r, column=c)
@@ -64,17 +67,22 @@ for (txt, r, c) in btnnums:
 # arithmetic operators and .
 btnarm = [['*',4,0], ['/',4,1], ['+',4,2], ['-',4,3]]
 for (txt, r, c) in btnarm:
-  btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=17,pady=3, bg='#0060BF', font=('Helvetica', 15, 'bold'))
+  if txt=='+':
+    btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=15.4,pady=3, bg='#0060BF', font=('Helvetica', 15, 'bold'))
+  elif txt=='/':
+    btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=17,pady=3, bg='#0060BF', font=('Helvetica', 16, 'bold'))
+  else:
+    btn = Button(root, text=txt, command=lambda txt=txt: (typing(txt)), padx=17,pady=3, bg='#0060BF', font=('Helvetica', 15, 'bold'))
   btn.grid(row=r, column=c)
   
 # results and clears
-buttonclr = Button(root, text='AC', command=allclear, padx=16, pady=11, bg='#C45924', font=('Helvetica', 9, 'bold'))
+buttonclr = Button(root, text='AC', command=allclear, padx=16, pady=11, bg="#C40000", font=('Helvetica', 9, 'bold'))
 buttonclr.grid(row=3, column=2)
 
 buttondel = Button(root, text='⌫', command=backspace, padx=16, pady=11, bg='#C45924', font=('Helvetica', 9, 'bold'))
 buttondel.grid(row=3, column=3)
 
-buttoneql = Button(root, text='=', command=equal, padx=73, pady=5, bg='#1DA80E', font=('Helvetica', 14, 'bold'))
+buttoneql = Button(root, text='=', command=equal, padx=70, pady=1, bg='#1DA80E', font=('Helvetica', 17, 'bold'))
 buttoneql.grid(row=5, column=1, columnspan=3)
 
 
