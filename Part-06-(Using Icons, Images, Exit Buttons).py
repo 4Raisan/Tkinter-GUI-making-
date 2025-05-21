@@ -4,4 +4,4 @@ root = Tk()
 root.title('Icons & Images & Exit Program')
 
 # add the window icon
-root.iconbitmap('')
+root.iconbitmap('Part-06-(iconbitmap).ico')
