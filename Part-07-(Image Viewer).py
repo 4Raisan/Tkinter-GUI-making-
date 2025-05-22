@@ -5,6 +5,8 @@ root = Tk()
 root.title("Image Viewer")
 
 slocation = path.dirname(path.abspath(__file__))
+# make a list of the other files/folders on the same directory
+iteamlist = listdir(slocation)
 
 button_next = Button(root, text="<<", command=#)
 button_next.grid(row=1, column=0)                     
