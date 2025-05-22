@@ -5,7 +5,7 @@ root = Tk()
 # root.title(), like the window name in the close button row
 root.title('Cal : )')
 # add the window icon
-root.iconbitmap('Part-06-(iconbitmap).ico')
+root.iconbitmap(r'C:/Users/4Raisan/Desktop/GitHub/Tkinter-GUI-making-/Part-06-(iconbitmap).ico')
 
 # input
 e = Entry(root, width=20,  borderwidth=5, font=('Courier', 12, 'bold'))
