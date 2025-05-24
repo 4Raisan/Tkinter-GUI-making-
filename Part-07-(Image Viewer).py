@@ -11,8 +11,14 @@ def show(pth):
     labelimg = Label(image=img)
     labelimg.grid(columnspan=2, row=0, column=0)
 
-slocation = path.dirname(path.abspath(__file__))
-# make a list of the other files/folders on the same directory
+def locator(carry):
+    if carry=='+':
+
+    else:
+
+
+
+slocation = path.dirname(path.abspath(__file__)) # make a list of the other files/folders on the same directory
 iteamlist = listdir(slocation)
 piclist = []
 for i in iteamlist:
@@ -20,9 +26,11 @@ for i in iteamlist:
         piclist.append(i)
 print(piclist)
 
-button_next = Button(root, text="<<", command=next)
+piclistaccs = 0
+
+button_next = Button(root, text="<<", command=lambda: show(0), locator("+"))
 button_next.grid(row=1, column=0)                     
-button_back = Button(root, text=">>", command=back)
+button_back = Button(root, text=">>", command=lambda: show(1), locator("-"))
 button_back.grid(row=1, column=1)
           
 root.mainloop()
