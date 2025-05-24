@@ -7,7 +7,7 @@ root.title("Image Viewer")
 
 def show(pth):
     global img, labelimg, inx
-    img = ImageTk.PhotoImage(Image.open(pth))
+    img = ImageTk.PhotoImage(Image.open(piclist[pth]))
     labelimg = Label(image=img)
     labelimg.grid(columnspan=2, row=0, column=0)
 
@@ -29,6 +29,7 @@ print(piclist)
 
 piclistaccs = 0
 
+show(piclistaccs)
 button_next = Button(root, text="<<", command=lambda: (show(piclistaccs), locator("+")))
 button_next.grid(row=1, column=0)                     
 button_back = Button(root, text=">>", command=lambda: (show(piclistaccs), locator("-")))
