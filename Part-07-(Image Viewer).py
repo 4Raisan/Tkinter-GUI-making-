@@ -22,6 +22,7 @@ def back():
 slocation = path.dirname(path.abspath(__file__))
 # make a list of the other files/folders on the same directory
 iteamlist = listdir(slocation)
+print(iteamlist)
 
 img1 = ImageTk.PhotoImage(Image.open("Part-06-(Image).png"))
 labelI = Label(image=img1)
