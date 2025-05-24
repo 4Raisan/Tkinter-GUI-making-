@@ -6,6 +6,8 @@ root = Tk()
 root.title("Image Viewer")
 
 def next():
+    global img1
+    global labelI
     img1 = ImageTk.PhotoImage(Image.open("Part-06-(Image).png"))
     labelI = Label(image=img1)
     labelI.grid(row=0, column=0)
