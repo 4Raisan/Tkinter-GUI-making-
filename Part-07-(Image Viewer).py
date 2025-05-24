@@ -11,6 +11,8 @@ def next():
     labelI.grid(row=0, column=0)
 
 def back():
+    global img1
+    global labelI
     img1 = ImageTk.PhotoImage(Image.open("Part-06-(Image).png"))
     labelI = Label(image=img1)
     labelI.grid(row=0, column=0)
