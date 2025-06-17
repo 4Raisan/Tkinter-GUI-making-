@@ -11,4 +11,9 @@ messagebox.showinfo("Title", "This is an info popup")
 # 2. with Warning symbole
 messagebox.showwarning("Warning", "This is a warning")
 
+# 3. with Error symbole
+messagebox.showerror("Error", "This is an error")
+
+### -----------------------------------------------------
+
 root.mainloop()
