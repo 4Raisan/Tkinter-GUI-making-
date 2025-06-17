@@ -8,5 +8,7 @@ root = tk.Tk()
 # 1. with Info symbole
 messagebox.showinfo("Title", "This is an info popup")
 
+# 2. with Warning symbole
+messagebox.showwarning("Warning", "This is a warning")
 
 root.mainloop()
